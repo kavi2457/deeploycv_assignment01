@@ -32,8 +32,8 @@ def hybrid_image(image1, image2, low_pass_size, high_pass_size):
     return gray1, low_pass, gray2, high_pass, hybrid
 
 # Load two input images
-image1 = cv2.imread("airballoon.jpg")  # Replace with actual path
-image2 = cv2.imread("houses.jpg")      # Replace with actual path
+image1 = cv2.imread("../images/airballoon.jpg")  # Replace with actual path
+image2 = cv2.imread("../images/houses.jpg")      # Replace with actual path
 
 # Check if images are loaded
 if image1 is None or image2 is None:
@@ -76,6 +76,6 @@ plt.tight_layout()
 plt.show()
 
 # Save the output images
-cv2.imwrite("low_pass_result.jpg", low_pass_img)
-cv2.imwrite("high_pass_result.jpg", high_pass_img)
-cv2.imwrite("hybrid_image_result.jpg", hybrid_img)
+cv2.imwrite("../images/low_pass_result.jpg", low_pass_img)
+cv2.imwrite("../images/high_pass_result.jpg", high_pass_img)
+cv2.imwrite("../images/hybrid_image_result.jpg", hybrid_img)

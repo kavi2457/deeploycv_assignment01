@@ -16,7 +16,7 @@ preprocess = transforms.Compose([
 ])
 
 # Load and preprocess the bike image
-image_path = r"C:\Users\kavit\PycharmProjects\230552_KavitaKumari_deeploycv\bike_image.jpeg"  # Replace with your image path
+image_path = r"../images/bike_image.jpeg"  # Replace with your image path
 image = Image.open(image_path).convert("RGB")  # Convert to RGB to avoid issues with grayscale or other formats
 input_tensor = preprocess(image).unsqueeze(0)  # Add a batch dimension
 

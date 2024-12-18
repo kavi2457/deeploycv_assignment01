@@ -9,8 +9,8 @@ def show(name, n, m, i, title):
     plt.axis('off')
 
 # Load images using cv2.imread()
-image1 = cv2.imread('airballoon.jpg', cv2.IMREAD_GRAYSCALE)
-image2 = cv2.imread('houses.jpg', cv2.IMREAD_GRAYSCALE) 
+image1 = cv2.imread('../images/airballoon.jpg', cv2.IMREAD_GRAYSCALE)
+image2 = cv2.imread('../images/houses.jpg', cv2.IMREAD_GRAYSCALE)
 
 # Check if images are loaded correctly
 if image1 is None or image2 is None:
